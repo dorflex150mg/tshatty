@@ -1,0 +1,11 @@
+{% extends "base.hmtl" %}
+{% content block %}
+<h2> Welcome {{ user_name }} </h2>
+<ul>
+{% for friend in friends %}
+<li><form action="conversation.html">
+	<input type="submit" value={{ friend }} name="go_to_conv"/>
+</li>
+{% endfor %}
+</ul>
+{% endblock %}

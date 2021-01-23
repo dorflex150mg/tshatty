@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+<h2>Login</h2>
+{% block content %}
+<form method="GET">
+	{{ form.as_p }}
+	<input type="submit" value="Login">
+</form>
+<form action="/create_user", method="GET">
+	<input type="submit" value="Create New User">
+</form>
+{% endblock %}
